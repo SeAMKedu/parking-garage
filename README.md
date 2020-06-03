@@ -6,6 +6,8 @@ This Python GUI application simulates the operation of a parking garage which ha
 
 The application communicates with a TwinCAT 3 PLC program via Automation Device Specification (ADS) protocol.
 
+![GUI](img/gui.png)
+
 Once a light sensor LS1 detects an arriving car, a motor M1 raises the barrier. After the barrier has been raised and the car has passed a light sensor LS2, the barrier is lowered and counter is increased by 1. Similarly, the lights sensors LS3 and LS4 detect when a car drives out from the parking garage. In this case the counter in decreased by 1. The motor M2 controls the barrier where the cars drive out.
 
 If the parking garage is full, the barrier where the cars drive in is locked and a red indication light is on.
